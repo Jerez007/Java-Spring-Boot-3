@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/content")
+@CrossOrigin // allows cors
 public class ContentController {
 
     private final ContentCollectionRepository repository;
