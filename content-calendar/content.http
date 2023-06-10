@@ -18,3 +18,38 @@ Content-Type: application/json
   "dateUpdated": null,
   "url": ""
 }
+
+
+### Update existing Content
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "MY FIRST POST",
+  "desc": "MY FIRST POST",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-11-10T13:25:45.324033",
+  "dateUpdated": null,
+  "url": "www.google.com"
+}
+
+
+### Update existing Content with invalid id
+PUT http://localhost:8080/api/content/100
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "MY FIRST POST",
+  "desc": "MY FIRST POST",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-11-10T13:25:45.324033",
+  "dateUpdated": null,
+  "url": "www.google.com"
+}
+
+### Delete by id
+DELETE http://localhost:8080/api/content/2
