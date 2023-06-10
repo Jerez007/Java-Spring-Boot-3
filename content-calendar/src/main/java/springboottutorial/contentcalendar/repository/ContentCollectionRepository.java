@@ -43,7 +43,7 @@ public class ContentCollectionRepository {
                 null,
                 "");
 
-        content.add(content);
+        contentList.add(content);
     }
 
 }
