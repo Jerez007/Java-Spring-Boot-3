@@ -1,5 +1,6 @@
 package springboottutorial.contentcalendar.controller;
 
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
@@ -32,7 +33,7 @@ public class ContentController {
 
     @ResponseStatus(HttpStatus.CREATED) // returns response when new content is created
     @PostMapping("")
-    public void create(@RequestBody Content content) {
+    public void create(@Valid @RequestBody Content content) {
         repository.save(content);
     }
 
