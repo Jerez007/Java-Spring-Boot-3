@@ -12,6 +12,10 @@ import java.util.List;
 import java.util.Optional;
 
 // Keeps a collection of content in-memory to test out application
+/* After creating the ContentRepository.java file, this class is no longer need.
+ContentRepository has all the methods we need to interact with the database, and we don't have to
+implement those methods at all.
+ */
 @Repository
 public class ContentCollectionRepository {
     private final List<Content> contentList = new ArrayList<>();
