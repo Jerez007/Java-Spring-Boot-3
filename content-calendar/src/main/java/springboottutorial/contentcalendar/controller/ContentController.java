@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import springboottutorial.contentcalendar.model.Content;
 import springboottutorial.contentcalendar.repository.ContentCollectionRepository;
+import springboottutorial.contentcalendar.repository.ContentJdbcTemplateRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,7 +17,6 @@ import java.util.Optional;
 public class ContentController {
 
     private final ContentCollectionRepository repository;
-
     public ContentController(ContentCollectionRepository repository) {
         this.repository = repository;
     }
