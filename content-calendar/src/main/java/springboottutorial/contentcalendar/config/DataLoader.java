@@ -10,9 +10,7 @@ import springboottutorial.contentcalendar.repository.ContentRepository;
 import java.io.InputStream;
 import java.util.List;
 
-// CommandLineRunner runs after dependency injection happens, as the application is started up
-// This is one way of loading data and will this class file here as an example, but it is not used
-// The other way can be seen in the Application.java file which uses CommandLineRunner
+// This is used to load dummy data in to the h2 database
 @Component
 public class DataLoader implements CommandLineRunner {
 
